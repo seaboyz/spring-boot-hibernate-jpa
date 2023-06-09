@@ -10,3 +10,5 @@ CREATE TABLE student (
   last_name VARCHAR(45) DEFAULT NULL,
   email VARCHAR(45) DEFAULT NULL
 );
+
+SELECT * FROM student;
