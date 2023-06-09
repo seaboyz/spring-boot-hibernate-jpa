@@ -11,6 +11,10 @@ CREATE TABLE student (
   email VARCHAR(45) DEFAULT NULL
 );
 
-SELECT setval(pg_get_serial_sequence('student', 'id'), 3000);
+-- set id start with 1
+SELECT setval(pg_get_serial_sequence('student', 'id'), 1);
 
 SELECT * FROM student;
+
+-- truncate vs drop
+TRUNCATE student;
