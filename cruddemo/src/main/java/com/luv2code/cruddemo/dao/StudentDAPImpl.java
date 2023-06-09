@@ -38,7 +38,9 @@ public class StudentDAPImpl implements StudentDAO {
   public List<Student> findAll() {
 
     // create query
-    TypedQuery<Student> query = entityManager.createQuery("FROM Student", Student.class);
+    TypedQuery<Student> query = entityManager.createQuery(
+        "FROM Student order by lastName",
+        Student.class);
 
     // return query results
     return query.getResultList();
