@@ -11,4 +11,6 @@ CREATE TABLE student (
   email VARCHAR(45) DEFAULT NULL
 );
 
+SELECT setval(pg_get_serial_sequence('student', 'id'), 3000);
+
 SELECT * FROM student;
