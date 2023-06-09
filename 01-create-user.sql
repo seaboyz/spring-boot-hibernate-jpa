@@ -6,6 +6,8 @@ END$$;
 
 CREATE USER springstudent WITH PASSWORD '18231337';
 
+ALTER USER springstudent PASSWORD '18231337'; 
+
 ALTER USER springstudent WITH SUPERUSER;
 
 GRANT ALL PRIVILEGES ON DATABASE student_tracker TO springstudent;
